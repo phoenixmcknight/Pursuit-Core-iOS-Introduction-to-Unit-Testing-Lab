@@ -24,7 +24,7 @@ class DetailViewControllerThree:UIViewController {
         if passingInfo.type == "boolean" {
         switch sender.tag {
         case 0:
-            if sender.titleLabel?.text == passingInfo.correct_answer {
+            if sender.titleLabel?.text == passingInfo.correct_answer.removingPercentEncoding {
            winningLabel.text = "You are correct!"
                 view.backgroundColor = .green
                sender.isHighlighted = true
@@ -38,7 +38,7 @@ class DetailViewControllerThree:UIViewController {
                 buttonOutlets.forEach({$0.isEnabled = false})
             }
                 case 1:
-                if sender.titleLabel?.text == passingInfo.correct_answer {
+                if sender.titleLabel?.text == passingInfo.correct_answer.removingPercentEncoding {
                     winningLabel.text = "You are correct!"
                     view.backgroundColor = .green
                     sender.isHighlighted = true
@@ -52,9 +52,7 @@ class DetailViewControllerThree:UIViewController {
                     buttonOutlets.forEach({$0.isEnabled = false})
             }
                     default:
-                        winningLabel.text = "You are incorrect!"
-                        view.backgroundColor = .darkGray
-                        sender.isHighlighted = true
+                       winningLabel.text = "lol"
                         
                         buttonOutlets.forEach({$0.isEnabled = false})
                     
@@ -62,7 +60,7 @@ class DetailViewControllerThree:UIViewController {
         } else if passingInfo.type == "multiple" {
             switch sender.tag {
             case 0:
-                if sender.titleLabel?.text == passingInfo.correct_answer {
+                if sender.titleLabel?.text == passingInfo.correct_answer.removingPercentEncoding {
                     winningLabel.text = "You are correct!"
                     view.backgroundColor = .green
                     sender.isHighlighted = true
@@ -76,7 +74,7 @@ class DetailViewControllerThree:UIViewController {
                     buttonOutlets.forEach({$0.isEnabled = false})
                 }
             case 1:
-                if sender.titleLabel?.text == passingInfo.correct_answer {
+                if sender.titleLabel?.text == passingInfo.correct_answer.removingPercentEncoding {
                     winningLabel.text = "You are correct!"
                     view.backgroundColor = .green
                     sender.isHighlighted = true
@@ -90,7 +88,7 @@ class DetailViewControllerThree:UIViewController {
                     buttonOutlets.forEach({$0.isEnabled = false})
                 }
             case 2:
-                if sender.titleLabel?.text == passingInfo.correct_answer {
+                if sender.titleLabel?.text == passingInfo.correct_answer.removingPercentEncoding {
                     winningLabel.text = "You are correct!"
                     view.backgroundColor = .green
                     sender.isHighlighted = true
@@ -104,7 +102,7 @@ class DetailViewControllerThree:UIViewController {
                     buttonOutlets.forEach({$0.isEnabled = false})
                 }
             case 3:
-                if sender.titleLabel?.text == passingInfo.correct_answer {
+                if sender.titleLabel?.text == passingInfo.correct_answer.removingPercentEncoding {
                     winningLabel.text = "You are correct!"
                     view.backgroundColor = .green
                     sender.isHighlighted = true
