@@ -26,19 +26,21 @@ struct Trivia:Codable {
     let category:String
     let correct_answer:String
     let incorrect_answers:[String]
+    let type:String
     
-//    func scrambleAnswers() -> [String] {
-//        var emptyArr:[String] = []
-//        var count = incorrect_answers.count + 1
-//        while count > 0 {
-//           var newAnswer = incorrect_answers.randomElement()!
-//
-//            emptyArr.append(newAnswer)
-//           // incorrect_answers.r
-//
-//        }
-//
-//
-//}
+    func scrambleAnswers() -> [String] {
+        var emptyArr:[String] = []
+        emptyArr.append(correct_answer.removingPercentEncoding!)
+        for answer in incorrect_answers {
+            emptyArr.append(answer.removingPercentEncoding!)
+        }
+       return emptyArr.shuffled()
+           
+
+
+        }
+
+
+
 
 }

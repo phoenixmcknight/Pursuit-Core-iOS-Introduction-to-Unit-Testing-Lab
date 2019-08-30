@@ -8,35 +8,146 @@
 
 import UIKit
 class DetailViewControllerThree:UIViewController {
+    
+    @IBOutlet weak var winningLabel: UILabel!
+    @IBOutlet var buttonOutlets: [UIButton]!
+    
    
-    
-    
-    @IBOutlet weak var correctAnswer: UILabel!
+
     var passingInfo:Trivia!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //setUpLabels()
+        setUpLabels()
     }
     @IBAction func answers(_ sender: UIButton) {
-        if sender.tag == 2 {
-            sender.setTitle("gogo", for: .normal)
-           let title = sender.title(for: .normal)
+        if passingInfo.type == "boolean" {
+        switch sender.tag {
+        case 0:
+            if sender.titleLabel?.text == passingInfo.correct_answer {
+           winningLabel.text = "You are correct!"
+                view.backgroundColor = .green
+               sender.isHighlighted = true
+            
+            buttonOutlets.forEach({$0.isEnabled = false})
+            }else {
+                winningLabel.text = "You are incorrect!"
+                view.backgroundColor = .darkGray
+                sender.isHighlighted = true
+                
+                buttonOutlets.forEach({$0.isEnabled = false})
+            }
+                case 1:
+                if sender.titleLabel?.text == passingInfo.correct_answer {
+                    winningLabel.text = "You are correct!"
+                    view.backgroundColor = .green
+                    sender.isHighlighted = true
+                    
+                    buttonOutlets.forEach({$0.isEnabled = false})
+                }else {
+                    winningLabel.text = "You are incorrect!"
+                    view.backgroundColor = .darkGray
+                    sender.isHighlighted = true
+                    
+                    buttonOutlets.forEach({$0.isEnabled = false})
+            }
+                    default:
+                        winningLabel.text = "You are incorrect!"
+                        view.backgroundColor = .darkGray
+                        sender.isHighlighted = true
+                        
+                        buttonOutlets.forEach({$0.isEnabled = false})
+                    
+            }
+        } else if passingInfo.type == "multiple" {
+            switch sender.tag {
+            case 0:
+                if sender.titleLabel?.text == passingInfo.correct_answer {
+                    winningLabel.text = "You are correct!"
+                    view.backgroundColor = .green
+                    sender.isHighlighted = true
+                    
+                    buttonOutlets.forEach({$0.isEnabled = false})
+                }else {
+                    winningLabel.text = "You are incorrect!"
+                    view.backgroundColor = .black
+                    sender.isHighlighted = true
+                    
+                    buttonOutlets.forEach({$0.isEnabled = false})
+                }
+            case 1:
+                if sender.titleLabel?.text == passingInfo.correct_answer {
+                    winningLabel.text = "You are correct!"
+                    view.backgroundColor = .green
+                    sender.isHighlighted = true
+                    
+                    buttonOutlets.forEach({$0.isEnabled = false})
+                }else {
+                    winningLabel.text = "You are incorrect!"
+                    view.backgroundColor = .black
+                    sender.isHighlighted = true
+                    
+                    buttonOutlets.forEach({$0.isEnabled = false})
+                }
+            case 2:
+                if sender.titleLabel?.text == passingInfo.correct_answer {
+                    winningLabel.text = "You are correct!"
+                    view.backgroundColor = .green
+                    sender.isHighlighted = true
+                    
+                    buttonOutlets.forEach({$0.isEnabled = false})
+                }else {
+                    winningLabel.text = "You are incorrect!"
+                    view.backgroundColor = .black
+                    sender.isHighlighted = true
+                    
+                    buttonOutlets.forEach({$0.isEnabled = false})
+                }
+            case 3:
+                if sender.titleLabel?.text == passingInfo.correct_answer {
+                    winningLabel.text = "You are correct!"
+                    view.backgroundColor = .green
+                    sender.isHighlighted = true
+                    
+                    buttonOutlets.forEach({$0.isEnabled = false})
+                } else {
+                    winningLabel.text = "You are incorrect!"
+                    view.backgroundColor = .black
+                    sender.isHighlighted = true
+                    
+                    buttonOutlets.forEach({$0.isEnabled = false})
+                }
+            default:
+                sender.setTitle("lol", for: .normal)
+                
+            }
         }
+        
     }
-//    func setUpLabels() {
-//
-//        answerONe.text =  passingInfo.incorrect_answers[0]
-//        answerThree.text = ""
-//        answerTwo.text = ""
-//        correctAnswer.text = passingInfo.correct_answer
-//        if passingInfo.incorrect_answers.count == 3 {
-//            answerTwo.text = passingInfo.incorrect_answers[1]
-//            answerThree.text = passingInfo.incorrect_answers[2]
-//
-//        }
-    
+    func setUpLabels() {
+        
+        var scrambled = passingInfo.scrambleAnswers()
+        winningLabel.text = ""
+        winningLabel.backgroundColor = .white
+        if  passingInfo.type == "boolean" {
+buttonOutlets[0].setTitle(scrambled[0], for: .normal)
+buttonOutlets[1].setTitle(scrambled[1], for: .normal)
+buttonOutlets[2].isHidden = true
+            buttonOutlets[2].isEnabled = false
+            buttonOutlets[3].isHidden = true
+            buttonOutlets[3].isEnabled = false
+            
+        } else if passingInfo.type == "multiple" {
+            buttonOutlets[0].setTitle(scrambled[0], for: .normal)
+            buttonOutlets[1].setTitle(scrambled[1], for: .normal)
+            buttonOutlets[2].setTitle(scrambled[2], for: .normal)
+            buttonOutlets[3].setTitle(scrambled[3], for: .normal)
         }
     
 
+    
 
+
+
+}
+}

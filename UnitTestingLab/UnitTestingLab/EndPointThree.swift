@@ -41,8 +41,11 @@ extension EndPointThreeViewController:UITableViewDataSource,UITableViewDelegate 
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableViewTrivia.dequeueReusableCell(withIdentifier: "trivia")
-        cell?.textLabel?.text = trivia[indexPath.row].question
-        cell?.detailTextLabel?.text = trivia[indexPath.row].category
+        
+        
+        
+        cell?.textLabel?.text = trivia[indexPath.row].question.removingPercentEncoding
+        cell?.detailTextLabel?.text = trivia[indexPath.row].category.removingPercentEncoding
         return cell!
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
