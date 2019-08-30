@@ -349,11 +349,11 @@
             </objects>
             <point key="canvasLocation" x="1039.1304347826087" y="-1029.2410714285713"/>
         </scene>
-        <!--Item 2-->
+        <!--Jokes-->
         <scene sceneID="w37-8R-Zym">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="yR5-0A-qI8" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item 2" id="D3P-x7-nvd"/>
+                    <tabBarItem key="tabBarItem" title="Jokes" id="D3P-x7-nvd"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ABg-jL-dys">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -368,11 +368,11 @@
             </objects>
             <point key="canvasLocation" x="-613.04347826086962" y="259.82142857142856"/>
         </scene>
-        <!--Item 1-->
+        <!--Star Wars Movies-->
         <scene sceneID="Mkf-Wq-ueQ">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="wUi-6D-iKp" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item 1" id="3ZS-P8-mHi"/>
+                    <tabBarItem key="tabBarItem" title="Star Wars Movies" id="3ZS-P8-mHi"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ldk-d1-lod">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -387,11 +387,11 @@
             </objects>
             <point key="canvasLocation" x="-613.04347826086962" y="-388.39285714285711"/>
         </scene>
-        <!--Item-->
+        <!--Trivia Questions-->
         <scene sceneID="qqT-ck-YJe">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="CGs-26-FKb" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="jZZ-Kd-zNx"/>
+                    <tabBarItem key="tabBarItem" title="Trivia Questions" id="jZZ-Kd-zNx"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="M68-bU-B9U">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
