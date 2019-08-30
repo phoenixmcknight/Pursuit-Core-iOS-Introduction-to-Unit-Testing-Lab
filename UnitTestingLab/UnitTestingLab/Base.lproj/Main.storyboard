@@ -320,6 +320,9 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <state key="normal" title="Button3"/>
+                                <connections>
+                                    <action selector="answers:" destination="SwX-rp-R5k" eventType="touchUpInside" id="MNZ-RI-jds"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
