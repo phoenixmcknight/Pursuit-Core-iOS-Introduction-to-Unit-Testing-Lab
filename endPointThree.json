@@ -1,0 +1,121 @@
+{
+    "response_code": 0,
+    "results": [
+        {
+            "category": "Entertainment%3A%20Music",
+            "type": "multiple",
+            "difficulty": "medium",
+            "question": "Which%20of%20these%20artists%20do%20NOT%20originate%20from%20France%3F",
+            "correct_answer": "The%20Chemical%20Brothers",
+            "incorrect_answers": [
+                "Air",
+                "Justice",
+                "Daft%20Punk"
+            ]
+        },
+        {
+            "category": "Entertainment%3A%20Video%20Games",
+            "type": "boolean",
+            "difficulty": "medium",
+            "question": "In%20%22Overwatch%2C%22%20an%20allied%20McCree%20will%20say%20%22Step%20right%20up%22%20upon%20using%20his%20ultimate%20ability%20Deadeye.",
+            "correct_answer": "True",
+            "incorrect_answers": [
+                "False"
+            ]
+        },
+        {
+            "category": "General%20Knowledge",
+            "type": "boolean",
+            "difficulty": "easy",
+            "question": "The%20Sun%20rises%20from%20the%20North.",
+            "correct_answer": "False",
+            "incorrect_answers": [
+                "True"
+            ]
+        },
+        {
+            "category": "Entertainment%3A%20Video%20Games",
+            "type": "multiple",
+            "difficulty": "medium",
+            "question": "Which%20company%20did%20Bethesda%20purchase%20the%20Fallout%20Series%20from%3F",
+            "correct_answer": "Interplay%20Entertainment%20",
+            "incorrect_answers": [
+                "Capcom",
+                "Blizzard%20Entertainment",
+                "Nintendo"
+            ]
+        },
+        {
+            "category": "Science%20%26%20Nature",
+            "type": "multiple",
+            "difficulty": "medium",
+            "question": "In%20Chemistry%2C%20how%20many%20isomers%20does%20Butanol%20%28C4H9OH%29%20have%3F",
+            "correct_answer": "4",
+            "incorrect_answers": [
+                "3",
+                "5",
+                "6"
+            ]
+        },
+        {
+            "category": "Entertainment%3A%20Video%20Games",
+            "type": "multiple",
+            "difficulty": "hard",
+            "question": "In%20TF2%20Lore%2C%20what%20are%20the%20names%20of%20the%20Heavy%27s%20younger%20sisters%3F",
+            "correct_answer": "Yana%20and%20Bronislava",
+            "incorrect_answers": [
+                "Gaba%20and%20Anna",
+                "Yanna%20and%20Gaba",
+                "Anna%20and%20Bronislava"
+            ]
+        },
+        {
+            "category": "History",
+            "type": "multiple",
+            "difficulty": "medium",
+            "question": "What%20was%20the%20total%20length%20of%20the%20Titanic%3F",
+            "correct_answer": "882%20ft%20%7C%20268.8%20m",
+            "incorrect_answers": [
+                "759%20ft%20%7C%20231.3%20m",
+                "1042%20ft%20%7C%20317.6%20m",
+                "825%20ft%20%7C%20251.5%20m"
+            ]
+        },
+        {
+            "category": "Science%3A%20Mathematics",
+            "type": "multiple",
+            "difficulty": "hard",
+            "question": "What%20is%20the%20plane%20curve%20proposed%20by%20Descartes%20to%20challenge%20Fermat%27s%20extremum-finding%20techniques%20called%3F",
+            "correct_answer": "Folium%20of%20Descartes",
+            "incorrect_answers": [
+                "Elliptic%20Paraboloid%20of%20Descartes",
+                "Cartesian%20Coordinates",
+                "Descarte%27s%20Helicoid"
+            ]
+        },
+        {
+            "category": "Entertainment%3A%20Video%20Games",
+            "type": "multiple",
+            "difficulty": "medium",
+            "question": "Who%20developed%20the%202016%20farming%20RPG%20%22Stardew%20Valley%22%3F",
+            "correct_answer": "Eric%20Barone",
+            "incorrect_answers": [
+                "Daisuke%20Amaya",
+                "Jasper%20Byrne",
+                "Lucas%20Pope"
+            ]
+        },
+        {
+            "category": "Mythology",
+            "type": "multiple",
+            "difficulty": "medium",
+            "question": "Which%20of%20the%20following%20is%20not%20one%20of%20the%20Greek%20Fates%3F",
+            "correct_answer": "Narcissus",
+            "incorrect_answers": [
+                "Clotho",
+                "Atropos",
+                "Lachesis"
+            ]
+        }
+    ]
+}
